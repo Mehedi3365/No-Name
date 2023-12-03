@@ -1,0 +1,45 @@
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        padding: 20px 0;
+        &-logo {
+            & a {
+                font-size: 20px;
+                color: $white;
+                margin-left: 20px;
+                font-weight: 700;
+            }
+        }
+        &-item {
+            & ul {
+                & li {
+                    & a {
+                        color: #ffffff99;
+                        margin-left: 30px;
+                        @include f16;
+                        @include transition3;
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+        &-btn {
+            & a {
+                background-color: $primary;
+                padding: 10px 25px;
+                border-radius: 30px;
+                color: $white;
+                transition: 0.5s ease-in-out;
+                font-size: 17px;
+                &:hover {
+                    transition: 0.5s ease-in-out;
+                    transform: translateY(-5px);
+                }
+            }
+        }
+    }
