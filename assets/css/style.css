@@ -90,6 +90,12 @@ img {
   transform: translateY(-5px);
 }
 
+.is-sticky {
+  padding: 10px 0;
+  transition: 0.4s ease-in-out;
+  background-color: black;
+}
+
 .header {
   background-image: url(../img/bg-home.jpg);
   background-position: center;
@@ -143,7 +149,7 @@ img {
   }
 }
 .header-contant-vidbtn {
-  display: flex;
+  display: inline-block;
   justify-content: center;
 }
 .header-contant-vidbtn i {

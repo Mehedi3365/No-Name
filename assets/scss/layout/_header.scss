@@ -31,7 +31,7 @@
             }
         }
         &-vidbtn {
-            display: flex;
+            display: inline-block;
             justify-content: center;
             & i {
                 --btnw: 65px;
