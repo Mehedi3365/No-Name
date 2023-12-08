@@ -1,12 +1,12 @@
 body {
     font-family: "Rubik", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     color: $secondary;
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
     @include sm {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
 

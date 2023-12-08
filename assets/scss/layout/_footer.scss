@@ -1,0 +1,130 @@
+.footer {
+    background-color: $bgcolor;
+    padding-top: 90px;
+    &-comment {
+        & a {
+            width: 150px;
+            height: auto;
+            @include mb30;
+        }
+        & p {
+            @include mb40;
+        }
+        &-socialIcon {
+            & p {
+                color: $white;
+                font-size: 15px;
+            }
+            & a {
+                height: 46px;
+                width: 46px;
+                line-height: 46px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #fff;
+                color: #404040;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                font-size: 18px;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    @include transition;
+                    background-color: $primary;
+                    color: #fff !important;
+                    & * {
+                        color: currentColor !important;
+                        fill: currentColor !important;
+                    }
+                }
+                & svg {
+                    overflow: hidden;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &-lk {
+        & h5 {
+            color: $white;
+            @include mb40;
+        }
+        & ul {
+            & li {
+                display: block;
+                & a {
+                    margin-bottom: 5px;
+                    padding: 4px 0;
+                    font-size: 16px;
+                    color: $secondary;
+                    @include transition3;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &-sb {
+        & h5 {
+            color: $white;
+            @include mb40;
+        }
+        &-formBox {
+            @include mb40;
+            & .ine {
+                border-radius: 100px;
+                font-size: 14px;
+                padding: 13.5px 23px;
+                height: auto;
+                display: block;
+                width: 100%;
+                // height: calc(1.5em + 0.75rem + 2px);
+                height: 50px;
+                border: unset;
+                background-color: #474B5B;
+                &::placeholder {
+                    color: $white;
+                    opacity: 0.8;
+                }
+                line-height: 1.5;
+            }
+            & .ins {
+                position: absolute;
+                right: 5px;
+                top: 10%;
+                width: max-content;
+                min-width: 110px;
+                height: 40px;
+                color: $white;
+                background: $primary;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+                transition: .5s;
+                border-radius: 100px;
+                @include mb40;
+                &:hover {
+                    @include transition;
+                    background-color: $black;
+                }
+            }
+        }
+        &-apk {
+            & a {
+                border-radius: 100px;
+                background-color: #ffffff1a;
+                display: inline-block;
+                color: #fff;
+                padding: 16px 27px;
+                margin-right: 20px;
+                margin-top: 20px;
+                @include transition;
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}

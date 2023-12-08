@@ -1,9 +1,8 @@
 /* It For All */
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Tomorrow:wght@100;200;300;400;500;600;700&display=swap");
 body {
   font-family: "Rubik", sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   color: #95a0ab;
   font-weight: 400;
   overflow-x: hidden;
@@ -11,7 +10,7 @@ body {
 }
 @media only screen and (max-width: 767px) {
   body {
-    font-size: 13px;
+    font-size: 14px;
   }
 }
 
@@ -122,13 +121,7 @@ img {
 }
 @media only screen and (max-width: 1279px) {
   .nav-btn a {
-    padding: 9px 24px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .nav-btn a {
-    padding: 7px 14px;
-    font-size: 16px;
+    padding: 9px 12px;
   }
 }
 .nav-btn a:hover {
@@ -690,6 +683,118 @@ img {
   transform: translateY(-5px);
 }
 
+.faq {
+  margin-bottom: 200px;
+}
+@media only screen and (max-width: 1439px) {
+  .faq {
+    margin-bottom: 150px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .faq {
+    margin-bottom: 95px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faq {
+    margin-bottom: 80px;
+  }
+}
+.faq-item-single {
+  border-bottom: 1px solid #ecf0f5;
+}
+.faq-item-single button {
+  border: unset;
+  background-color: unset;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  padding: 20px 30px;
+  position: relative;
+}
+@media only screen and (max-width: 1439px) {
+  .faq-item-single button {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faq-item-single button {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .faq-item-single button {
+    font-size: 16px;
+    margin-left: 10px;
+    text-align: start;
+  }
+}
+.faq-item-single button::before {
+  position: absolute;
+  left: -5px;
+  top: 25px;
+  content: "\f068";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-right: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  color: #ffffff;
+  background-color: #ff0000;
+  z-index: 1;
+}
+@media only screen and (max-width: 1439px) {
+  .faq-item-single button::before {
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .faq-item-single button::before {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .faq-item-single button::before {
+    width: 18px;
+    height: 18px;
+  }
+}
+.faq-item-single button[aria-expanded=false]::before {
+  content: "+";
+}
+.faq-item-single p {
+  margin-left: 30px;
+  padding-right: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .faq-item-single p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .faq-item-single p {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .faq-item-single p {
+    font-size: 12px;
+  }
+}
+
 .process {
   background-color: #f8f9fa;
   padding: 80px 0;
@@ -1068,11 +1173,22 @@ img {
   width: 50%;
   margin-right: 20px;
 }
+@media only screen and (max-width: 991px) {
+  .contact-form .input-name {
+    width: 100%;
+    margin-right: 0;
+  }
+}
 .contact-form .input-name input {
   width: 100%;
 }
 .contact-form .input-email {
   width: 50%;
+}
+@media only screen and (max-width: 991px) {
+  .contact-form .input-email {
+    width: 100%;
+  }
 }
 .contact-form .input-email input {
   width: 100%;
@@ -1103,114 +1219,240 @@ img {
   transform: translateY(-5px);
 }
 
-.faq {
-  margin-bottom: 200px;
+.footer {
+  background-color: #272A33;
+  padding-top: 90px;
+}
+.footer-comment a {
+  width: 150px;
+  height: auto;
+  margin-bottom: 30px;
 }
 @media only screen and (max-width: 1439px) {
-  .faq {
-    margin-bottom: 150px;
+  .footer-comment a {
+    margin-bottom: 22px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-comment a {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-comment a {
+    margin-bottom: 12px;
+  }
+}
+.footer-comment p {
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1439px) {
+  .footer-comment p {
+    margin-bottom: 35px;
   }
 }
 @media only screen and (max-width: 1279px) {
-  .faq {
-    margin-bottom: 95px;
+  .footer-comment p {
+    margin-bottom: 25px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .faq {
-    margin-bottom: 80px;
-  }
-}
-.faq-item-single {
-  border-bottom: 1px solid #ecf0f5;
-}
-.faq-item-single button {
-  border: unset;
-  background-color: unset;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: -0.5px;
-  padding: 20px 30px;
-  position: relative;
-}
-@media only screen and (max-width: 1439px) {
-  .faq-item-single button {
-    font-size: 16px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .faq-item-single button {
-    font-size: 16px;
+  .footer-comment p {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .faq-item-single button {
-    font-size: 16px;
-    margin-left: 10px;
-    text-align: start;
+  .footer-comment p {
+    margin-bottom: 15px;
   }
 }
-.faq-item-single button::before {
-  position: absolute;
-  left: -5px;
-  top: 25px;
-  content: "\f068";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
+.footer-comment-socialIcon p {
+  color: #ffffff;
+  font-size: 15px;
+}
+.footer-comment-socialIcon a {
+  height: 46px;
+  width: 46px;
+  line-height: 46px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #404040;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
   font-size: 18px;
-  padding-right: 1px;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  color: #ffffff;
+  transition: 0.2s ease-in-out;
+}
+.footer-comment-socialIcon a:hover {
+  transition: 0.4s ease-in-out;
   background-color: #ff0000;
-  z-index: 1;
+  color: #fff !important;
+}
+.footer-comment-socialIcon a:hover * {
+  color: currentColor !important;
+  fill: currentColor !important;
+}
+.footer-comment-socialIcon a svg {
+  overflow: hidden;
+  vertical-align: middle;
+}
+.footer-lk h5 {
+  color: #ffffff;
+  margin-bottom: 40px;
 }
 @media only screen and (max-width: 1439px) {
-  .faq-item-single button::before {
-    width: 18px;
-    height: 18px;
-    font-size: 16px;
+  .footer-lk h5 {
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .footer-lk h5 {
+    margin-bottom: 25px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .faq-item-single button::before {
-    width: 18px;
-    height: 18px;
+  .footer-lk h5 {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .faq-item-single button::before {
-    width: 18px;
-    height: 18px;
+  .footer-lk h5 {
+    margin-bottom: 15px;
   }
 }
-.faq-item-single button[aria-expanded=false]::before {
-  content: "+";
+.footer-lk ul li {
+  display: block;
 }
-.faq-item-single p {
-  margin-left: 30px;
-  padding-right: 30px;
+.footer-lk ul li a {
+  margin-bottom: 5px;
+  padding: 4px 0;
   font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
+  color: #95a0ab;
+  transition: 0.4s ease-in-out;
+}
+.footer-lk ul li a:hover {
+  color: #ffffff;
+}
+.footer-sb h5 {
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1439px) {
+  .footer-sb h5 {
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .footer-sb h5 {
+    margin-bottom: 25px;
+  }
 }
 @media only screen and (max-width: 991px) {
-  .faq-item-single p {
-    font-size: 14px;
+  .footer-sb h5 {
+    margin-bottom: 20px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .faq-item-single p {
-    font-size: 14px;
+  .footer-sb h5 {
+    margin-bottom: 15px;
   }
 }
-@media only screen and (max-width: 479px) {
-  .faq-item-single p {
-    font-size: 12px;
+.footer-sb-formBox {
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1439px) {
+  .footer-sb-formBox {
+    margin-bottom: 35px;
   }
+}
+@media only screen and (max-width: 1279px) {
+  .footer-sb-formBox {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-sb-formBox {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-sb-formBox {
+    margin-bottom: 15px;
+  }
+}
+.footer-sb-formBox .ine {
+  border-radius: 100px;
+  font-size: 14px;
+  padding: 13.5px 23px;
+  height: auto;
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: unset;
+  background-color: #474B5B;
+  line-height: 1.5;
+}
+.footer-sb-formBox .ine::-moz-placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+.footer-sb-formBox .ine::placeholder {
+  color: #ffffff;
+  opacity: 0.8;
+}
+.footer-sb-formBox .ins {
+  position: absolute;
+  right: 5px;
+  top: 10%;
+  width: -moz-max-content;
+  width: max-content;
+  min-width: 110px;
+  height: 40px;
+  color: #ffffff;
+  background: #ff0000;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.5s;
+  border-radius: 100px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 1439px) {
+  .footer-sb-formBox .ins {
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 1279px) {
+  .footer-sb-formBox .ins {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-sb-formBox .ins {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-sb-formBox .ins {
+    margin-bottom: 15px;
+  }
+}
+.footer-sb-formBox .ins:hover {
+  transition: 0.4s ease-in-out;
+  background-color: #000000;
+}
+.footer-sb-apk a {
+  border-radius: 100px;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  display: inline-block;
+  color: #fff;
+  padding: 16px 27px;
+  margin-right: 20px;
+  margin-top: 20px;
+  transition: 0.4s ease-in-out;
+}
+.footer-sb-apk a:hover {
+  background-color: #ff0000;
 }/*# sourceMappingURL=style.css.map */
