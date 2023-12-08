@@ -3,14 +3,25 @@
         top: 0;
         left: 0;
         right: 0;
-        z-index: 9;
-        padding: 20px 0;
+        z-index: 2;
+        padding: 25px 0;
+        transition: 0.5s ease-in-out;
+        margin-top: 0;
+        @include lg {
+            padding: 12px 0;
+        }
+        &-menutreger {
+            margin-right: 20px;
+        }
         &-logo {
             & a {
                 font-size: 20px;
                 color: $white;
                 margin-left: 20px;
                 font-weight: 700;
+                @include lg {
+                    margin-left: 0;
+                }
             }
         }
         &-item {
@@ -21,6 +32,13 @@
                         margin-left: 30px;
                         @include f16;
                         @include transition3;
+                        @include lg {
+                            margin: 0 12px;
+                        }
+                        @include lg {
+                            margin: 0 10px;
+                            font-size: 15px;
+                        }
                         &:hover {
                             color: $white;
                         }
@@ -36,6 +54,13 @@
                 color: $white;
                 transition: 0.5s ease-in-out;
                 font-size: 17px;
+                @include lg {
+                    padding: 9px 24px;
+                }
+                @include md {
+                    padding: 7px 14px;
+                    font-size: 16px;
+                }
                 &:hover {
                     transition: 0.5s ease-in-out;
                     transform: translateY(-5px);
@@ -45,7 +70,49 @@
     }
     
     .is-sticky {
-        padding: 10px 0;
+        padding: 8px 0;
         transition: 0.4s ease-in-out;
-        background-color: black;
+        background-color: #272A33;
+    }
+    
+    .ismenu {
+        padding-top: 70px;
+        transition: 0.4s ease-in-out;
+        background-color: #272A33;
+    }
+    
+    // Menu for mobile 
+    .mobile-menu {
+        // @include transition;
+        transition: 0.3s ease-in;
+        position: fixed;
+        top: -999px;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 50px;
+        z-index: 3;
+        background-color: #272A33;
+        &-item {
+            padding: 20px 0;
+            & li {
+                display: inline-block;
+                padding-left: 30px;
+                @include sm {
+                    padding-left: 15px;
+                }
+                & a {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+    
+    .menuShow {
+        left: 0;
+        top: 0px;
+        opacity: 1;
+        visibility: visible;
+        transition: .3s ease-in-out;
     }

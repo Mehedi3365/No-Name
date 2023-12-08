@@ -1,6 +1,6 @@
 // window scroll mathod
 function windowScroll() {
-    const navbar = document.getElementById("navbar");
+    const navbar = document.getElementById("navbar2");
     if (
         document.body.scrollTop >= 50 ||
         document.documentElement.scrollTop >= 50
@@ -16,14 +16,16 @@ window.addEventListener('scroll', (ev) => {
 })
 
 
-// magnific-popup
-// $(document).ready(function() {
-//     $('.mgpvieo').magnificPopup({
-//         type: 'image'
-//     });
-// });
+
+
 
 $(document).ready(function() {
+    $('.menutreger').click(function() {
+        $('.mobile-menu').toggleClass('menuShow');
+        $('#navbar2').toggleClass('ismenu');
+    });
+
+    // magnific-popup
     $('.mgpvieo').magnificPopup({
         disableOn: 700,
         type: 'iframe',

@@ -1,84 +1,44 @@
 //  All font size
+@mixin f16 {
+    font-size: 16px;
+}
+
 @mixin f18 {
     font-size: 18px;
     @include xl {
         font-size: 16px;
     }
     @include lg {
+        font-size: 15px;
+    }
+    @include sm {
         font-size: 14px;
     }
-    @include sm {
-        font-size: 12px;
-    }
 }
 
-@mixin f16 {
-    font-size: 16px;
-}
-
-@mixin f48 {
-    font-size: 48px;
-    @include xl {
-        font-size: 40px;
-    }
+@mixin f28 {
+    font-size: 28px;
     @include lg {
-        font-size: 32px;
-    }
-    @include md {
-        font-size: 30px;
-    }
-}
-
-// All line heihgt
-@mixin lh40 {
-    line-height: 40px;
-    @include xl {
-        line-height: 35px;
-    }
-    @include lg {
-        line-height: 32px;
-    }
-    @include md {
-        line-height: 28px;
-    }
-    @include sm {
-        line-height: 25px;
-    }
-}
-
-@mixin lh30 {
-    line-height: 30px;
-}
-
-@mixin lh28 {
-    line-height: 28px;
-    @include lg {
-        line-height: 26px;
-    }
-    @include sm {
-        line-height: 20px;
-    }
-}
-
-@mixin lh55 {
-    line-height: 55px;
-    @include lg {
-        line-height: 50px;
-    }
-    @include md {
-        line-height: 44px;
+        font-size: 26px;
     }
 }
 
 //  All margin
 @mixin mb30 {
     margin-bottom: 30px;
+    @include xl {
+        margin-bottom: 22px;
+    }
     @include md {
         margin-bottom: 20px;
     }
     @include sm {
         margin-bottom: 12px;
     }
+}
+
+@mixin mb25 {
+    margin-bottom: 25px;
 }
 
 @mixin mb40 {
@@ -100,11 +60,11 @@
 @mixin mb20 {
     margin-bottom: 20px;
     @include xl {
-        margin-bottom: 12px;
+        margin-bottom: 13px;
     }
-    @include md {
-        margin-bottom: 6px;
-    }
+    // @include md {
+    //     margin-bottom: px;
+    // }
 }
 
 @mixin mb28 {
@@ -140,79 +100,15 @@
     }
 }
 
-@mixin mb200 {
-    margin-bottom: 200px;
-    @include xl {
-        margin-bottom: 150px;
-    }
-    @include lg {
-        margin-bottom: 110px;
-    }
-    @include md {
-        margin-bottom: 80px;
-    }
-    @include sm {
-        margin-bottom: 50px;
-    }
-}
-
 @mixin m20 {
-    margin: 20;
-}
-
-// style 
-@mixin titlep {
-    color: #244886;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: 2.1px;
-    text-transform: uppercase;
-    margin: 0;
-    @include xl {
-        font-size: 12px;
-        line-height: 38px;
-    }
-    @include lg {
-        font-size: 11px;
-        line-height: 32px;
-    }
-    @include md {
-        font-size: 10px;
-        line-height: 28px;
-    }
-    @include sm {
-        font-size: 8px;
-        line-height: 20px;
-    }
-}
-
-@mixin titleh {
-    color: #0F2137;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 55px;
-    letter-spacing: -1.5px;
-    @include xl {
-        font-size: 30px;
-        line-height: 45px;
-    }
-    @include lg {
-        font-size: 25px;
-        line-height: 38px;
-    }
-    @include md {
-        font-size: 22px;
-        line-height: 36px;
-    }
-    @include sm {
-        font-size: 19px;
-        line-height: 30px;
-        letter-spacing: normal;
-    }
+    margin: 20px;
 }
 
 // transition 
 @mixin transition3 {
-    transition: 0.3s ease-in-out;
+    transition: 0.4s ease-in-out;
+}
+
+@mixin transition {
+    transition: 0.4s ease-in-out;
 }

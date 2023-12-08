@@ -15,15 +15,45 @@
         content: '';
         background: linear-gradient(to right, #512da8, #711e72);
         opacity: 0.9;
+        background-repeat: no-repeat;
     }
     &-contant {
         padding-bottom: 150px;
         padding-top: 220px;
+        @include xl {
+            padding-bottom: 113px;
+            padding-top: 200px;
+        }
+        @include lg {
+            padding-bottom: 103px;
+            padding-top: 155px;
+        }
+        @include md {
+            padding-bottom: 76px;
+            padding-top: 138px;
+        }
+        @include sm {
+            padding-bottom: 37px;
+            padding-top: 108px;
+        }
         &-text {
             & h1 {
                 font-size: 46px;
                 line-height: 64px;
                 @include mb20;
+                color: $white;
+                @include lg {
+                    font-size: 45px;
+                    line-height: 59px;
+                }
+                @include md {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+                @include sm {
+                    font-size: 37px;
+                    line-height: 46px;
+                }
             }
             & p {
                 color: #ffffffb3;
@@ -46,6 +76,9 @@
                 margin-top: 10px;
                 color: $primary;
                 cursor: pointer;
+                @include md {
+                    --btnw: 60px;
+                }
             }
         }
     }

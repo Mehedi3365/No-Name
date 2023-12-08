@@ -1,0 +1,58 @@
+.blog {
+    margin-bottom: 50px;
+    &-box {
+        @include transition;
+        margin: 0 25px;
+        @include lg {
+            margin: 0;
+        }
+        @include sm {
+            margin-bottom: 35px;
+        }
+        &:hover {
+            // box-shadow: 0 0 8px 5px rgba(153, 153, 153, 0.4);
+            transform: translateY(-17px);
+        }
+        &-img {
+            @include mb20;
+            & img {}
+        }
+        &-content {
+            @include mb80;
+            & h5 {
+                color: $secondary;
+                font-size: 14px;
+                @include sm {
+                    margin-bottom: 0;
+                }
+            }
+            & h4 {
+                & a {
+                    color: $head;
+                    @include transition;
+                    @include f18;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+            & p {
+                font-size: 14px;
+                line-height: 24px;
+                @include mb20;
+                @include sm {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    &-btn {
+        & a {
+            color: $primary;
+            @include transition;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
