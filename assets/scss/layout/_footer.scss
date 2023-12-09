@@ -1,6 +1,7 @@
 .footer {
     background-color: $bgcolor;
     padding-top: 90px;
+    padding-bottom: 50px;
     @include sm {
         text-align: center;
     }
