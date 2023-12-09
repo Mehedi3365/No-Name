@@ -1,30 +1,33 @@
 .testimonial {
     @include mb100;
     &-box {
-        position: relative;
-        z-index: 1;
-        margin-top: 80px;
+        padding-top: 80px;
         @include transition;
-        @include lg {
-            margin-top: 40px;
-        }
-        @include sm {
-            margin-bottom: 25px;
-        }
-        &:hover {
-            transform: translateY(-17px);
-        }
-        &-wrap {
-            border: 1px solid $border;
-            border-radius: 8px;
-            background-color: $white;
-            padding: 60px 25px 30px;
-            @include lg {
-                padding: 48px 10px 24px;
+        &-single {
+            position: relative;
+            z-index: 1;
+            @include transition;
+            &:hover {
+                transform: translateY(-17px);
             }
-            @include mb30;
-            @include md {
-                margin-bottom: 14px;
+            &-wrap {
+                border: 1px solid $border;
+                border-radius: 8px;
+                background-color: $white;
+                padding: 60px 25px 30px;
+                @include lg {
+                    padding: 48px 10px 24px;
+                }
+                @include mb30;
+                @include md {
+                    margin-bottom: 14px;
+                }
+                @include lg {
+                    margin-top: 40px;
+                }
+                @include sm {
+                    margin-bottom: 25px;
+                }
             }
             &-img {
                 position: absolute;
@@ -56,4 +59,9 @@
             line-height: 1.2;
         }
     }
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: unset;
+    // overflow-x: hidden !important;
 }

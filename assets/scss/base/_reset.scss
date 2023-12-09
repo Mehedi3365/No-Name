@@ -3,7 +3,7 @@ body {
     font-size: 15px;
     color: $secondary;
     font-weight: 400;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     position: relative;
     // @include sm {
     //     font-size: 14px;

@@ -1,7 +1,7 @@
 .footer {
     background-color: $bgcolor;
     padding-top: 90px;
-    @include md {
+    @include sm {
         text-align: center;
     }
     &-comment {
