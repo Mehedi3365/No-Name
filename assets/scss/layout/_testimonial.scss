@@ -9,6 +9,9 @@
             @include transition;
             &:hover {
                 transform: translateY(-17px);
+                @include md {
+                    transform: unset;
+                }
             }
             &-wrap {
                 border: 1px solid $border;

@@ -962,6 +962,11 @@ img {
 .testimonial-box-single:hover {
   transform: translateY(-17px);
 }
+@media only screen and (max-width: 991px) {
+  .testimonial-box-single:hover {
+    transform: unset;
+  }
+}
 .testimonial-box-single-wrap {
   border: 1px solid #ecf0f5;
   border-radius: 8px;
