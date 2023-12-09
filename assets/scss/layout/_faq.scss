@@ -24,11 +24,11 @@
                 @include xl {
                     font-size: 16px;
                 }
-                @include md {
-                    font-size: 16px;
-                }
+                // @include md {
+                //     font-size: 16px;
+                // }
                 @include sm {
-                    font-size: 16px;
+                    font-size: 15px;
                     margin-left: 10px;
                     text-align: start;
                 }
@@ -55,14 +55,6 @@
                         height: 18px;
                         font-size: 16px;
                     }
-                    @include md {
-                        width: 18px;
-                        height: 18px;
-                    }
-                    @include sm {
-                        width: 18px;
-                        height: 18px;
-                    }
                 }
                 &[ aria-expanded="false"]::before {
                     content: '\2b';
@@ -78,7 +70,7 @@
                     font-size: 14px;
                 }
                 @include sm {
-                    font-size: 14px;
+                    line-height: 22px;
                 }
                 @include ssm {
                     font-size: 12px;

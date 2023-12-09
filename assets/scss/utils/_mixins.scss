@@ -11,9 +11,9 @@
     @include lg {
         font-size: 15px;
     }
-    @include sm {
-        font-size: 14px;
-    }
+    // @include sm {
+    //     font-size: 14px;
+    // }
 }
 
 @mixin f28 {

@@ -82,7 +82,7 @@
             color: $white;
             @include transition;
             @include md {
-                padding: 7px 13px;
+                padding: 9px 17px;
             }
             &:hover {
                 transform: translateY(-5px);

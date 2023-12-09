@@ -1,6 +1,8 @@
 .feature {
     padding-top: 80px;
     padding-bottom: 80px;
+    position: relative;
+    background-image: linear-gradient(#f8f9fa, white);
     @include xl {
         padding-bottom: 50px;
     }
@@ -12,8 +14,6 @@
         padding-top: 33px;
         padding-bottom: 21px;
     }
-    position: relative;
-    background-image: linear-gradient(#f8f9fa, white);
     &-row {
         padding: 0 50px;
         @include md {
@@ -23,6 +23,7 @@
     &-item {
         @include sm {
             margin-bottom: 20px;
+            padding: 0 15px;
         }
         & h3 {
             @include mb25;
@@ -69,10 +70,7 @@
             border-radius: 4px;
             line-height: 24px;
             @include lg {
-                padding: 8px 16px
-            }
-            @include md {
-                padding: 7px 13px
+                padding: 9px 20px
             }
             &:hover {
                 transform: translateY(-10px);

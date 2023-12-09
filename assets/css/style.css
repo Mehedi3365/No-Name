@@ -8,11 +8,6 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-@media only screen and (max-width: 767px) {
-  body {
-    font-size: 14px;
-  }
-}
 
 h1,
 h2,
@@ -80,6 +75,9 @@ img {
 .nav-menutreger {
   margin-right: 20px;
 }
+.nav-menutreger i {
+  font-size: 18px;
+}
 .nav-logo a {
   font-size: 20px;
   color: #ffffff;
@@ -112,7 +110,7 @@ img {
   color: #ffffff;
 }
 .nav-btn a {
-  background-color: #ff0000;
+  background-color: #FF216F;
   padding: 10px 25px;
   border-radius: 30px;
   color: #ffffff;
@@ -121,7 +119,12 @@ img {
 }
 @media only screen and (max-width: 1279px) {
   .nav-btn a {
-    padding: 9px 12px;
+    padding: 8px 23px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav-btn a {
+    padding: 8px 28px;
   }
 }
 .nav-btn a:hover {
@@ -158,11 +161,16 @@ img {
 }
 .mobile-menu-item li {
   display: inline-block;
-  padding-left: 30px;
+  padding: 0 30px;
 }
 @media only screen and (max-width: 767px) {
   .mobile-menu-item li {
-    padding-left: 15px;
+    padding: 0 3%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .mobile-menu-item li {
+    padding: 0 2%;
   }
 }
 .mobile-menu-item li a {
@@ -271,14 +279,14 @@ img {
   --btnw: 65px;
   width: var(--btnw);
   height: var(--btnw);
-  border: 2px solid #ff0000;
+  border: 2px solid #FF216F;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
   margin-top: 10px;
-  color: #ff0000;
+  color: #FF216F;
   cursor: pointer;
 }
 @media only screen and (max-width: 991px) {
@@ -346,7 +354,7 @@ img {
   transform: translateY(-15px);
 }
 .service-box:hover .sIcon {
-  background-color: #ff0000;
+  background-color: #FF216F;
   color: #ffffff;
 }
 .service-box-icon {
@@ -358,7 +366,7 @@ img {
   box-shadow: 0 0 18px 0px rgba(155, 155, 155, 0.3);
   line-height: 68px;
   margin-bottom: 15px;
-  color: #ff0000;
+  color: #FF216F;
   margin-bottom: 30px;
   transition: 0.4s ease-in-out;
 }
@@ -466,7 +474,7 @@ img {
   margin: 0 auto;
   width: 50px;
   height: 2px;
-  background-color: #ff0000;
+  background-color: #FF216F;
   margin-bottom: 20px;
 }
 @media only screen and (max-width: 1439px) {
@@ -521,6 +529,7 @@ img {
 @media only screen and (max-width: 767px) {
   .feature-item {
     margin-bottom: 20px;
+    padding: 0 15px;
   }
 }
 .feature-item h3 {
@@ -560,26 +569,21 @@ img {
   position: absolute;
   left: 0;
   top: 14px;
-  background-color: #ff0000;
+  background-color: #FF216F;
 }
 .feature-item-btn {
   padding: 10px 20px;
   font-size: 14px;
   letter-spacing: 0.5px;
   transition: 0.5s ease-in-out;
-  background-color: #ff0000;
+  background-color: #FF216F;
   color: #ffffff;
   border-radius: 4px;
   line-height: 24px;
 }
 @media only screen and (max-width: 1279px) {
   .feature-item-btn {
-    padding: 8px 16px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .feature-item-btn {
-    padding: 7px 13px;
+    padding: 9px 20px;
   }
 }
 .feature-item-btn:hover {
@@ -663,20 +667,20 @@ img {
   }
 }
 .pricing-box-list p strong {
-  color: #ff0000;
+  color: #FF216F;
 }
 .pricing-box-btn {
   padding: 10px 20px;
   letter-spacing: 0.5px;
   transition: all 0.5s;
   color: #ffffff;
-  background-color: #ff0000;
+  background-color: #FF216F;
   border-radius: 4px;
   margin-top: 20px;
 }
 @media only screen and (max-width: 991px) {
   .pricing-box-btn {
-    padding: 7px 13px;
+    padding: 8px 18px;
   }
 }
 .pricing-box-btn:hover {
@@ -719,14 +723,9 @@ img {
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 991px) {
-  .faq-item-single button {
-    font-size: 16px;
-  }
-}
 @media only screen and (max-width: 767px) {
   .faq-item-single button {
-    font-size: 16px;
+    font-size: 15px;
     margin-left: 10px;
     text-align: start;
   }
@@ -747,7 +746,7 @@ img {
   height: 20px;
   border-radius: 100%;
   color: #ffffff;
-  background-color: #ff0000;
+  background-color: #FF216F;
   z-index: 1;
 }
 @media only screen and (max-width: 1439px) {
@@ -755,18 +754,6 @@ img {
     width: 18px;
     height: 18px;
     font-size: 16px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .faq-item-single button::before {
-    width: 18px;
-    height: 18px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .faq-item-single button::before {
-    width: 18px;
-    height: 18px;
   }
 }
 .faq-item-single button[aria-expanded=false]::before {
@@ -786,7 +773,7 @@ img {
 }
 @media only screen and (max-width: 767px) {
   .faq-item-single p {
-    font-size: 14px;
+    line-height: 22px;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -847,7 +834,7 @@ img {
   height: var(--picon);
   content: "+";
   z-index: 3;
-  background-color: #ff0000;
+  background-color: #FF216F;
   border-radius: 100%;
   color: #ffffff;
   font-size: 18px;
@@ -894,7 +881,7 @@ img {
   margin-bottom: 20px;
   font-size: 48px;
   line-height: 72px;
-  color: #ff0000;
+  color: #FF216F;
 }
 @media only screen and (max-width: 1439px) {
   .process-box i {
@@ -924,11 +911,6 @@ img {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .process-box h4 {
-    font-size: 14px;
-  }
-}
 .process-box p {
   font-size: 14px;
   line-height: 24px;
@@ -936,7 +918,7 @@ img {
 .process-btn a {
   font-weight: 500;
   line-height: 1.5;
-  background-color: #ff0000;
+  background-color: #FF216F;
   padding: 10px 20px;
   border-radius: 6px;
   color: #ffffff;
@@ -944,7 +926,7 @@ img {
 }
 @media only screen and (max-width: 991px) {
   .process-btn a {
-    padding: 7px 13px;
+    padding: 9px 17px;
   }
 }
 .process-btn a:hover {
@@ -1118,13 +1100,8 @@ img {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .blog-box-content h4 a {
-    font-size: 14px;
-  }
-}
 .blog-box-content h4 a:hover {
-  color: #ff0000;
+  color: #FF216F;
 }
 .blog-box-content p {
   font-size: 14px;
@@ -1142,7 +1119,7 @@ img {
   }
 }
 .blog-btn a {
-  color: #ff0000;
+  color: #FF216F;
   transition: 0.4s ease-in-out;
 }
 .blog-btn a:hover {
@@ -1171,11 +1148,15 @@ img {
 }
 .contact-form .input-name {
   width: 50%;
-  margin-right: 20px;
+  margin-right: 3%;
 }
 @media only screen and (max-width: 991px) {
   .contact-form .input-name {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contact-form .input-name {
     margin-right: 0;
   }
 }
@@ -1206,14 +1187,9 @@ img {
   font-size: 14px;
   letter-spacing: 0.5px;
   transition: all 0.5s;
-  background-color: #ff0000;
+  background-color: #FF216F;
   color: #ffffff;
   border-radius: 6px;
-}
-@media only screen and (max-width: 991px) {
-  .contact-form .input-submit input {
-    padding: 7px 13px;
-  }
 }
 .contact-form .input-submit input:hover {
   transform: translateY(-5px);
@@ -1222,6 +1198,11 @@ img {
 .footer {
   background-color: #272A33;
   padding-top: 90px;
+}
+@media only screen and (max-width: 991px) {
+  .footer {
+    text-align: center;
+  }
 }
 .footer-comment a {
   width: 150px;
@@ -1266,6 +1247,16 @@ img {
     margin-bottom: 15px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .footer-comment p {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-comment-socialIcon .cst {
+    justify-content: center;
+  }
+}
 .footer-comment-socialIcon p {
   color: #ffffff;
   font-size: 15px;
@@ -1287,7 +1278,7 @@ img {
 }
 .footer-comment-socialIcon a:hover {
   transition: 0.4s ease-in-out;
-  background-color: #ff0000;
+  background-color: #FF216F;
   color: #fff !important;
 }
 .footer-comment-socialIcon a:hover * {
@@ -1320,6 +1311,11 @@ img {
 @media only screen and (max-width: 767px) {
   .footer-lk h5 {
     margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-lk h5 {
+    margin-top: 30px;
   }
 }
 .footer-lk ul li {
@@ -1359,6 +1355,11 @@ img {
     margin-bottom: 15px;
   }
 }
+@media only screen and (max-width: 767px) {
+  .footer-sb h5 {
+    margin-top: 30px;
+  }
+}
 .footer-sb-formBox {
   margin-bottom: 40px;
 }
@@ -1385,12 +1386,14 @@ img {
 .footer-sb-formBox .ine {
   border-radius: 100px;
   font-size: 14px;
+  padding-right: 120px !important;
   padding: 13.5px 23px;
   height: auto;
   display: block;
   width: 100%;
   height: 50px;
   border: unset;
+  color: #ffffff;
   background-color: #474B5B;
   line-height: 1.5;
 }
@@ -1402,6 +1405,11 @@ img {
   color: #ffffff;
   opacity: 0.8;
 }
+@media only screen and (max-width: 991px) {
+  .footer-sb-formBox .ine {
+    padding-right: 97px !important;
+  }
+}
 .footer-sb-formBox .ins {
   position: absolute;
   right: 5px;
@@ -1411,7 +1419,7 @@ img {
   min-width: 110px;
   height: 40px;
   color: #ffffff;
-  background: #ff0000;
+  background: #FF216F;
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -1443,6 +1451,17 @@ img {
   transition: 0.4s ease-in-out;
   background-color: #000000;
 }
+@media only screen and (max-width: 991px) {
+  .footer-sb-formBox .ins {
+    min-width: 88px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .footer-sb-apk {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .footer-sb-apk a {
   border-radius: 100px;
   background-color: rgba(255, 255, 255, 0.1019607843);
@@ -1454,5 +1473,5 @@ img {
   transition: 0.4s ease-in-out;
 }
 .footer-sb-apk a:hover {
-  background-color: #ff0000;
+  background-color: #FF216F;
 }/*# sourceMappingURL=style.css.map */

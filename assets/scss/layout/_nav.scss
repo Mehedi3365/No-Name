@@ -12,6 +12,9 @@
         }
         &-menutreger {
             margin-right: 20px;
+            & i {
+                font-size: 18px;
+            }
         }
         &-logo {
             & a {
@@ -55,7 +58,10 @@
                 transition: 0.5s ease-in-out;
                 font-size: 17px;
                 @include lg {
-                    padding: 9px 12px;
+                    padding: 8px 23px;
+                }
+                @include sm {
+                    padding: 8px 28px
                 }
                 &:hover {
                     transition: 0.5s ease-in-out;
@@ -94,9 +100,12 @@
             padding: 20px 0;
             & li {
                 display: inline-block;
-                padding-left: 30px;
+                padding: 0 30px;
                 @include sm {
-                    padding-left: 15px;
+                    padding: 0 3%;
+                }
+                @include ssm {
+                    padding: 0 2%;
                 }
                 & a {
                     color: $secondary;

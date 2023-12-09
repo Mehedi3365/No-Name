@@ -5,9 +5,9 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    @include sm {
-        font-size: 14px;
-    }
+    // @include sm {
+    //     font-size: 14px;
+    // }
 }
 
 h1,

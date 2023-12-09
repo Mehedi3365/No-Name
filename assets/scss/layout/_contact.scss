@@ -25,9 +25,11 @@
         & .input {
             &-name {
                 width: 50%;
-                margin-right: 20px;
+                margin-right: 3%;
                 @include md {
                     width: 100%;
+                }
+                @include sm {
                     margin-right: 0;
                 }
                 & input {
@@ -64,9 +66,9 @@
                     background-color: $primary;
                     color: $white;
                     border-radius: 6px;
-                    @include md {
-                        padding: 7px 13px;
-                    }
+                    // @include md {
+                    //     padding: 7px 13px;
+                    // }
                     &:hover {
                         transform: translateY(-5px);
                     }
