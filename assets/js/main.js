@@ -9,7 +9,7 @@ $(document).ready(function() {
         nav: false,
 
         responsive: {
-            // breakpoint from 0 up
+            // breakpoint from 0 upzl
             0: {
                 items: 1,
                 margin: 10,

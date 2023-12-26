@@ -1,0 +1,1016 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    padding: 25px 0;
+    transition: 0.5s ease-in-out;
+    margin-top: 0;
+    @include lg {
+        padding: 12px 0;
+    }
+    &-menutreger {
+        margin-right: 20px;
+        & i {
+            font-size: 18px;
+        }
+    }
+    &-logo {
+        & a {
+            font-size: 20px;
+            color: $white;
+            margin-left: 20px;
+            font-weight: 700;
+            @include lg {
+                margin-left: 0;
+            }
+        }
+    }
+    &-item {
+        & ul {
+            & li {
+                & a {
+                    color: #ffffff99;
+                    margin-left: 30px;
+                    @include f16;
+                    @include transition3;
+                    @include lg {
+                        margin: 0 12px;
+                    }
+                    @include lg {
+                        margin: 0 10px;
+                        font-size: 15px;
+                    }
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &-btn {
+        & a {
+            background-color: $primary;
+            padding: 10px 25px;
+            border-radius: 30px;
+            color: $white;
+            transition: 0.5s ease-in-out;
+            font-size: 17px;
+            @include lg {
+                padding: 8px 23px;
+            }
+            @include sm {
+                padding: 8px 28px
+            }
+            &:hover {
+                transition: 0.5s ease-in-out;
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+.is-sticky {
+    padding: 8px 0;
+    transition: 0.4s ease-in-out;
+    background-color: $bgcolor;
+}
+
+.ismenu {
+    padding-top: 70px;
+    transition: 0.4s ease-in-out;
+    background-color: $bgcolor;
+}
+
+// Menu for mobile 
+.mobile-menu {
+    // @include transition;
+    transition: 0.3s ease-in;
+    position: fixed;
+    top: -999px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    background-color: $bgcolor;
+    &-item {
+        padding: 20px 0;
+        & li {
+            display: inline-block;
+            padding: 0 30px;
+            @include sm {
+                padding: 0 3%;
+            }
+            @include ssm {
+                padding: 0 2%;
+            }
+            & a {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.menuShow {
+    left: 0;
+    top: 0px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s ease-in-out;
+}
+
+.header {
+    background-image: url(../img/bg-home.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100%;
+        content: '';
+        background: linear-gradient(to right, #512da8, #711e72);
+        opacity: 0.9;
+        background-repeat: no-repeat;
+    }
+    &-contant {
+        padding-bottom: 150px;
+        padding-top: 220px;
+        @include xl {
+            padding-bottom: 113px;
+            padding-top: 200px;
+        }
+        @include lg {
+            padding-bottom: 103px;
+            padding-top: 155px;
+        }
+        @include md {
+            padding-bottom: 76px;
+            padding-top: 138px;
+        }
+        @include sm {
+            padding-bottom: 37px;
+            padding-top: 108px;
+        }
+        &-text {
+            & h1 {
+                font-size: 46px;
+                line-height: 64px;
+                @include mb20;
+                color: $white;
+                @include lg {
+                    font-size: 45px;
+                    line-height: 59px;
+                }
+                @include md {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+                @include sm {
+                    font-size: 32px;
+                    line-height: 46px;
+                }
+            }
+            & p {
+                color: #ffffffb3;
+                @include mb20;
+            }
+        }
+        &-vidbtn {
+            display: inline-block;
+            justify-content: center;
+            & i {
+                --btnw: 65px;
+                width: var(--btnw);
+                height: var(--btnw);
+                border: 2px solid $primary;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                margin-top: 10px;
+                color: $primary;
+                cursor: pointer;
+                @include md {
+                    --btnw: 60px;
+                }
+            }
+        }
+    }
+}
+
+.service {
+    padding-top: 70px;
+    display: block;
+    @include lg {
+        padding-top: 50px;
+    }
+    &-box {
+        @include mb40;
+        padding: 20px 50px;
+        @include transition;
+        @include xl {
+            padding: 20px 14px;
+            margin-bottom: 0;
+        }
+        @include lg {
+            padding: 20px 0px;
+        }
+        @include md {
+            padding: 20px 8px;
+        }
+        @include sm {
+            padding: 15px 45px;
+        }
+        &:hover {
+            transform: translateY(-15px);
+            & .sIcon {
+                background-color: $primary;
+                color: $white;
+            }
+        }
+        &-icon {
+            font-size: 32px;
+            --sicon: 68px;
+            height: var(--sicon);
+            width: var(--sicon);
+            border-radius: 50%;
+            box-shadow: 0 0 18px 0px rgb(155, 155, 155, 0.3);
+            line-height: 68px;
+            margin-bottom: 15px;
+            color: $primary;
+            @include mb30;
+            @include transition;
+            @include lg {
+                --sicon: 55px;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 auto;
+                line-height: 0;
+                margin-bottom: 15px;
+            }
+            @include md {
+                --sicon: 50px;
+                font-size: 28px;
+            }
+        }
+        & h4 {
+            @include mb30;
+            @include lg {
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+.section-title {
+    margin-bottom: 65px;
+    @include sm {
+        margin-bottom: 30px;
+    }
+    & h1 {
+        @include f28;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0px;
+        line-height: 1;
+        font-weight: 500;
+        @include mb30;
+        @include sm {
+            font-size: 24px;
+        }
+    }
+    & .bdr {
+        display: inline-block;
+        margin: 0 auto;
+        width: 50px;
+        height: 2px;
+        background-color: $primary;
+        @include mb20;
+    }
+    & p {
+        color: $secondary;
+        font-size: 14px;
+        line-height: 27px;
+        letter-spacing: .7px;
+        @include lg {
+            font-size: 13px;
+            line-height: 25px;
+        }
+    }
+}
+
+.feature {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+    background-image: linear-gradient(#f8f9fa, white);
+    @include xl {
+        padding-bottom: 50px;
+    }
+    @include lg {
+        padding-top: 60px;
+        padding-bottom: 35px;
+    }
+    @include sm {
+        padding-top: 33px;
+        padding-bottom: 21px;
+    }
+    &-row {
+        padding: 0 50px;
+        @include md {
+            padding: 0;
+        }
+    }
+    &-item {
+        @include sm {
+            margin-bottom: 20px;
+            padding: 0 15px;
+        }
+        & h3 {
+            @include mb25;
+            line-height: 36px;
+            @include sm {
+                font-size: 20px;
+                margin-bottom: 20px;
+                line-height: 32px;
+            }
+        }
+        & p {
+            margin: 20px 0;
+        }
+        &-list {
+            margin-bottom: 30px;
+            padding-left: 20px;
+            @include md {
+                padding-left: 0;
+            }
+            & li {
+                position: relative;
+                line-height: 24px;
+                font-size: 15px;
+                padding: 7px 0 7px 20px;
+                display: block;
+                &::after {
+                    content: "";
+                    border-radius: 50%;
+                    width: 7px;
+                    height: 7px;
+                    position: absolute;
+                    left: 0;
+                    top: 14px;
+                    background-color: $primary;
+                }
+            }
+        }
+        &-btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            transition: 0.5s ease-in-out;
+            background-color: $primary;
+            color: $white;
+            border-radius: 4px;
+            line-height: 24px;
+            @include lg {
+                padding: 9px 20px
+            }
+            &:hover {
+                transform: translateY(-10px);
+            }
+        }
+    }
+    &-img {
+        max-width: 500px;
+        margin: 0 0 0 auto;
+        & img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.pricing {
+    padding: 100px 0;
+    @include md {
+        padding: 65px 0;
+    }
+    &-box {
+        border: 1px solid $border;
+        border-radius: 6px;
+        padding: 50px;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 0 1.25rem rgba(108, 118, 134, 0.1);
+        @include md {
+            padding: 30px 23px;
+        }
+        @include sm {
+            margin-bottom: 20px;
+        }
+        &:hover {
+            transform: translateY(-17px);
+        }
+        &-top {
+            @include mb40;
+            border-bottom: 1px solid $border;
+            & h6 {
+                text-transform: uppercase;
+            }
+            & p {
+                font-weight: 500;
+                text-transform: uppercase;
+            }
+        }
+        &-list {
+            & p {
+                color: $head;
+                @include mb20;
+                & strong {
+                    color: $primary;
+                }
+            }
+        }
+        &-btn {
+            padding: 10px 20px;
+            letter-spacing: 0.5px;
+            transition: all 0.5s;
+            color: $white;
+            background-color: $primary;
+            border-radius: 4px;
+            margin-top: 20px;
+            @include md {
+                padding: 8px 18px;
+            }
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+.faq {
+    margin-bottom: 200px;
+    @include xl {
+        margin-bottom: 150px;
+    }
+    @include lg {
+        margin-bottom: 95px;
+    }
+    @include md {
+        margin-bottom: 80px;
+    }
+    &-item {
+        &-single {
+            border-bottom: 1px solid $border;
+            & button {
+                border: unset;
+                background-color: unset;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: -0.5px;
+                padding: 20px 30px;
+                position: relative;
+                @include xl {
+                    font-size: 16px;
+                }
+                // @include md {
+                //     font-size: 16px;
+                // }
+                @include sm {
+                    font-size: 18px;
+                    margin-left: 10px;
+                    text-align: start;
+                    padding: 10px 30px;
+                    line-height: 24px;
+                }
+                &::before {
+                    position: absolute;
+                    left: -5px;
+                    top: 25px;
+                    content: '\f068';
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 100%;
+                    color: $white;
+                    background-color: $primary;
+                    z-index: 1;
+                    font-size: 14px;
+                    padding-right: 1px;
+                    width: 24px;
+                    height: 24px;
+                    @include xl {
+                        width: 18px;
+                        height: 18px;
+                        font-size: 16px;
+                    }
+                    @include sm {
+                        top: 15px;
+                        font-size: 14px;
+                    }
+                }
+                &[ aria-expanded="false"]::before {
+                    content: '\2b';
+                }
+            }
+            & p {
+                margin-left: 30px;
+                padding-right: 30px;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 32px;
+                @include md {
+                    font-size: 14px;
+                }
+                @include sm {
+                    line-height: 22px;
+                }
+            }
+        }
+    }
+}
+
+.process {
+    background-color: #f8f9fa;
+    padding: 80px 0;
+    @include mb80;
+    @include lg {
+        padding: 45px 0;
+    }
+    & .dashed1 {
+        position: relative;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            left: 65%;
+            top: 47px;
+            width: 75%;
+            height: 100%;
+            content: '';
+            border-top: 2px dashed #e0e0e0;
+            @include sm {
+                display: none;
+            }
+        }
+        &::before {
+            position: absolute;
+            top: 22%;
+            left: 100%;
+            --picon: 35px;
+            width: var(--picon);
+            height: var(--picon);
+            content: '\2b';
+            z-index: 3;
+            background-color: $primary;
+            border-radius: 100%;
+            color: $white;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include lg {
+                --picon: 30px;
+                top: 25%;
+            }
+            @include md {
+                --picon: 28px;
+                top: 21%;
+            }
+            @include sm {
+                display: none;
+            }
+        }
+    }
+    &-box {
+        @include mb80;
+        & i {
+            @include mb20;
+            font-size: 48px;
+            line-height: 72px;
+            color: $primary;
+            @include lg {
+                font-size: 40px;
+            }
+            @include lg {
+                font-size: 38px;
+            }
+        }
+        & h4 {
+            @include f18;
+        }
+        & p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+    &-btn {
+        & a {
+            font-weight: 500;
+            line-height: 1.5;
+            background-color: $primary;
+            padding: 10px 20px;
+            // font-size: 15px;
+            border-radius: 6px;
+            color: $white;
+            @include transition;
+            @include md {
+                padding: 9px 17px;
+            }
+            &:hover {
+                transform: translateY(-5px);
+            }
+        }
+    }
+}
+
+.testimonial {
+    @include mb100;
+    &-box {
+        padding-top: 80px;
+        @include transition;
+        @include sm {
+            padding-top: 10px;
+        }
+        &-single {
+            position: relative;
+            z-index: 1;
+            @include transition;
+            &:hover {
+                transform: translateY(-17px);
+                @include md {
+                    transform: unset;
+                }
+            }
+            &-wrap {
+                border: 1px solid $border;
+                border-radius: 8px;
+                background-color: $white;
+                padding: 60px 25px 30px;
+                @include lg {
+                    padding: 48px 10px 24px;
+                }
+                @include mb30;
+                @include md {
+                    margin-bottom: 14px;
+                }
+                @include lg {
+                    margin-top: 40px;
+                }
+                @include sm {
+                    margin-bottom: 25px;
+                }
+            }
+            &-img {
+                position: absolute;
+                z-index: 2;
+                top: 0%;
+                left: 41%;
+                margin: -40px auto;
+                --ticon: 80px;
+                height: var(--ticon);
+                width: var(--ticon);
+                @include lg {
+                    --ticon: 70px;
+                    top: 1%;
+                    left: 38%;
+                }
+                @include sm {
+                    left: 36%;
+                }
+                & img {
+                    border: 1px solid $border;
+                    padding: 5px;
+                    border-radius: 100%;
+                }
+            }
+        }
+        & h5 {
+            font-size: 16px;
+            text-align: center;
+            line-height: 1.2;
+        }
+    }
+}
+
+.owl-carousel .owl-stage-outer {
+    overflow: unset;
+    // overflow-x: hidden !important;
+}
+
+.blog {
+    margin-bottom: 50px;
+    &-box {
+        @include transition;
+        margin: 0 25px;
+        @include lg {
+            margin: 0;
+        }
+        @include sm {
+            margin-bottom: 35px;
+        }
+        &:hover {
+            // box-shadow: 0 0 8px 5px rgba(153, 153, 153, 0.4);
+            transform: translateY(-17px);
+        }
+        &-img {
+            @include mb20;
+            & img {}
+        }
+        &-content {
+            @include mb80;
+            & h5 {
+                color: $secondary;
+                font-size: 14px;
+                @include sm {
+                    margin-bottom: 0;
+                }
+            }
+            & h4 {
+                & a {
+                    color: $head;
+                    @include transition;
+                    @include f18;
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+            & p {
+                font-size: 14px;
+                line-height: 24px;
+                @include mb20;
+                @include sm {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+    &-btn {
+        & a {
+            color: $primary;
+            @include transition;
+            &:hover {
+                color: $secondary;
+            }
+        }
+    }
+}
+
+.contact {
+    &-item {
+        &-single {
+            margin-bottom: 30px;
+            & h5 {
+                font-size: 14px;
+                margin-bottom: 15px;
+                @include sm {
+                    margin-bottom: 10px;
+                }
+            }
+            & p {
+                margin-bottom: 7px;
+                @include sm {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    &-form {
+        & .inm {
+            margin-bottom: 20px;
+            & input,
+            textarea {
+                height: 50px;
+                padding-left: 20px;
+                border: 1px solid $border;
+                font-size: 14px;
+            }
+        }
+        & .input {
+            &-name {
+                width: 50%;
+                margin-right: 3%;
+                @include md {
+                    width: 100%;
+                }
+                @include sm {
+                    margin-right: 0;
+                }
+                & input {
+                    width: 100%;
+                }
+            }
+            &-email {
+                width: 50%;
+                @include md {
+                    width: 100%;
+                }
+                & input {
+                    width: 100%;
+                }
+            }
+            &-subject {
+                & input {
+                    width: 100%;
+                }
+            }
+            &-comment {
+                & textarea {
+                    width: 100%;
+                    height: 100px;
+                    padding: 10px 20px;
+                }
+            }
+            &-submit {
+                & input {
+                    padding: 10px 20px;
+                    letter-spacing: 0.5px;
+                    transition: all 0.5s;
+                    background-color: $primary;
+                    color: $white;
+                    border-radius: 6px;
+                    // @include md {
+                    //     padding: 7px 13px;
+                    // }
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $bgcolor;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    @include sm {
+        text-align: left;
+    }
+    &-comment {
+        & a {
+            width: 150px;
+            height: auto;
+            @include mb30;
+        }
+        & p {
+            @include mb40;
+            @include sm {
+                margin-top: 30px;
+            }
+        }
+        &-socialIcon {
+            & .cst {}
+            & p {
+                color: $white;
+                font-size: 15px;
+            }
+            & a {
+                height: 46px;
+                width: 46px;
+                line-height: 46px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #fff;
+                color: #404040;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 10px;
+                font-size: 18px;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    @include transition;
+                    background-color: $primary;
+                    color: #fff !important;
+                    & * {
+                        color: currentColor !important;
+                        fill: currentColor !important;
+                    }
+                }
+                & svg {
+                    overflow: hidden;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    &-lk {
+        & h5 {
+            color: $white;
+            @include mb40;
+            @include sm {
+                margin-top: 30px;
+            }
+        }
+        & ul {
+            & li {
+                display: block;
+                & a {
+                    margin-bottom: 5px;
+                    padding: 4px 0;
+                    font-size: 16px;
+                    color: $secondary;
+                    @include transition3;
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+    &-sb {
+        & h5 {
+            color: $white;
+            @include mb40;
+            @include sm {
+                margin-top: 30px;
+            }
+        }
+        &-formBox {
+            @include mb40;
+            & .ine {
+                border-radius: 100px;
+                font-size: 14px;
+                padding-right: 120px !important;
+                padding: 13.5px 23px;
+                height: auto;
+                display: block;
+                width: 100%;
+                // height: calc(1.5em + 0.75rem + 2px);
+                height: 50px;
+                border: unset;
+                color: $white;
+                background-color: #474B5B;
+                &::placeholder {
+                    color: $white;
+                    opacity: 0.8;
+                }
+                line-height: 1.5;
+                @include md {
+                    padding-right: 97px !important;
+                }
+            }
+            & .ins {
+                position: absolute;
+                right: 5px;
+                top: 10%;
+                width: max-content;
+                min-width: 110px;
+                height: 40px;
+                color: $white;
+                background: $primary;
+                border: none;
+                font-size: 16px;
+                font-weight: 500;
+                transition: .5s;
+                border-radius: 100px;
+                @include mb40;
+                &:hover {
+                    @include transition;
+                    background-color: $black;
+                }
+                @include md {
+                    min-width: 88px;
+                }
+            }
+        }
+        &-apk {
+            @include md {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            & a {
+                border-radius: 100px;
+                background-color: #ffffff1a;
+                display: inline-block;
+                color: #fff;
+                padding: 16px 27px;
+                margin-right: 20px;
+                margin-top: 20px;
+                @include transition;
+                @include sm {
+                    margin-right: 7px;
+                }
+                &:hover {
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+}
