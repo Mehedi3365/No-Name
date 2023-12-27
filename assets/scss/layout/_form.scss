@@ -1,0 +1,117 @@
+.form {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    &-title {
+        margin-bottom: 40px;
+        & h1 {
+            font-size: 30px;
+            font-weight: 700;
+        }
+        & p {
+            font-weight: 600;
+        }
+    }
+    &-btn {
+        margin-bottom: 40px;
+        & .google,
+        .apple {
+            width: calc(50% - 10px);
+            padding: 10px 0;
+            border: 1px solid $border2;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: 500;
+            color: $black;
+            @include transition;
+            &:hover {
+                color: #1B84FF;
+            }
+            & img {
+                width: 25px;
+                height: auto;
+                margin-right: 2px;
+            }
+        }
+        & .google {
+            margin-right: 20px;
+        }
+        & .apple {
+            & img {
+                width: 18px !important;
+            }
+        }
+    }
+    &-border {
+        padding-bottom: 40px;
+        position: relative;
+        z-index: 1;
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(50% - 60px);
+            border-bottom: 1px solid $border2;
+            content: '';
+        }
+        &::before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: calc(50% - 60px);
+            border-bottom: 1px solid $border2;
+            content: '';
+        }
+        & span {
+            display: block;
+            position: absolute;
+            top: -10px;
+            left: 40%;
+        }
+    }
+    &-input {
+        & input {
+            width: 100%;
+            &::placeholder {
+                color: #A2A8C2;
+                font-weight: 500;
+            }
+        }
+        & .text {
+            margin-bottom: 30px;
+        }
+        & a {
+            text-align: end;
+            display: block;
+            margin-top: 16px;
+            margin-bottom: 30px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: #80bbff;
+            }
+        }
+        & .signin {
+            width: 100%;
+            border: unset;
+            background-color: #1B84FF;
+            border-radius: 5px;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 16px;
+            color: $white;
+            transition: all .3s ease-in-out;
+            margin-bottom: 40px;
+            &:hover {
+                background-color: #60a9fd;
+            }
+        }
+        &-signup {
+            display: flex;
+            justify-content: center;
+            & a {
+                margin: 0;
+                margin-left: 10px;
+            }
+        }
+    }
+}
